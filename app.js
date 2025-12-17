@@ -70,11 +70,12 @@ for(let i = 0; i <= n; i++){
         found = true;
         break;
     }
-    if(!found){
+   
+}
+ if(!found){
         console.log("could not find value");
     }
     
-}
 
 console.log("EXERCISE 5:\n==========\n");
 
@@ -83,7 +84,7 @@ let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random 
 let start = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
 let end = Math.round(Math.random() * (1000 - 100) + 100); // creates a random number between 100 and 1000
 
-for(let i = start; i < end; i++){
+for(let i = start; i <= end; i++){
     if( i % fizzDivisor === 0 && i % buzzDivisor === 0){
         console.log("fizzbuzz");
     }
